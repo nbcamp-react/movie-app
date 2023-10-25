@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./src/apis.js" type="module"></script>
+    <script src="./src/main.js" type="module"></script>
+    <script src="./src/movie.js" type="module"></script>
+    <script src="./src/search.js" type="module"></script>
+    <title>Movie Collection</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Movie Collection</h1>
+      <form id="search" class="search_area">
+        <input
+          id="search-input"
+          type="text"
+          class="input-text"
+          autocomplete="off"
+          placeholder="영화 제목을 검색해 보세요"
+          autofocus
+        />
+        <button id="search-btn">검색</button>
+      </form>
+    </div>
+
+    <section id="movies-container">
+      <div>
+        <ul id="movie-list" class="movie-list"></ul>
+      </div>
+    </section>
+  </body>
+</html>

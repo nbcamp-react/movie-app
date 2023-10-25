@@ -1,0 +1,104 @@
+:root {
+  --color_card_bg: #f5f3f3;
+  --color_card_shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  --color_card_rating: #f39c12;
+  --color_card_container: #b4a6a6;
+  --color_body: #f7f4f4;
+  --color_input: white;
+  --color_input_btn: black;
+  --color_input_btn_bg: white;
+  --color_title: white;
+}
+
+body {
+  background-color: var(--color-body);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background-image: url(../assets/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px black;
+  font-size: 55px;
+  color: var(--color_title);
+}
+
+.input-text {
+  width: 300px;
+  height: 33px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: var(--color_input);
+}
+
+.search_area > button {
+  margin-left: 3px;
+  width: 100px;
+  height: 40px;
+  background-color: var(--color_input_btn_bg);
+  border-radius: 3px;
+  color: var(--color_input_btn);
+}
+
+.movie-list {
+  margin: 40px auto 10px auto;
+  padding: 40px;
+  width: 85%;
+  height: 100%;
+  background-color: var(--color_card_container);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 250px;
+  background-color: var(--color_card_bg);
+  border-radius: 10px;
+  box-shadow: var(--color_card_shadow);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.movie-card h2 {
+  margin: 15px auto;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.movie-card h5 {
+  margin: 35px 0 0 0;
+  font-size: 18px;
+  color: var(--color_card_rating);
+}
+
+.movie-card p {
+  margin: 30px 0 0 0;
+  font-size: 14px;
+  line-height: 1.2rem;
+}
