@@ -11,7 +11,7 @@
 }
 body {
   background: #f7f4f4;
-  width: 1000px; 
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -24,17 +24,17 @@ body {
   background-color: #f7f4f4;
   background-repeat: no-repeat;
   font-size: 50px;
-  margin: 0 20px 0 20px 
-  
+  margin: 0 20px 0 20px;
 }
 
-.Movie-info-box{
-  background-color: transparent;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+.Movie-info-box {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
   border-radius: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.movie-poster{
+.movie-poster {
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -42,78 +42,69 @@ body {
   justify-content: center;
   width: 1000px;
 }
-.Movie-info{
-  display: flex;
+.Movie-info {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
-.title{
-  
-  font-size: 3ch;
-  width: 300px;
-  height: 200px;
-  background-color: #b4a6a6;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
+.title {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #f39c12;
   padding: 20px;
 }
-.overview{
-  
-  width: 400px;
-  height: 200px;
-  background-color: #b4a6a6;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-  padding: 20px;
+.overview {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #444;
 }
-.vote_average{
+.vote_average {
   font-size: 1ch;
 }
 
-
-.form-commentInfo{
+.form-commentInfo {
   width: 100%;
 }
 
-.comment-count{
-  margin-bottom: 10px; 
+.comment-count {
+  margin-bottom: 10px;
 }
 
-.comment-input{
+.comment-input {
   width: 50%;
   height: 3.3em;
 }
 
-.submit{
-  background-color: rgb(0, 128,255);
+.submit {
+  background-color: rgb(0, 128, 255);
   width: 5.5em;
-  height: 3.3em;;
+  height: 3.3em;
   font-size: 15px;
   font-weight: bold;
   color: aliceblue;
 }
 
-.voteUp, .voteDown{
+.voteUp,
+.voteDown {
   width: 3.5em;
   height: 1.9em;
-  background-color: aqua;    
+  background-color: aqua;
 }
 
-.comments{
+.comments {
   margin-top: 10px;
 }
 
-.eachComment{   
-  width :50%; 
-  margin: 10px;  
-  padding: 0.5em; 
+.eachComment {
+  width: 50%;
+  margin: 10px;
+  padding: 0.5em;
   border-bottom: 1px solid #c1bcba;
 }
 
-.eachComment .name{
+.eachComment .name {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.3em;
@@ -121,32 +112,34 @@ body {
   justify-content: space-between;
 }
 
-.eachComment .inputValue{
+.eachComment .inputValue {
   font-size: 1.2em;
-  font-style: italic;    
+  font-style: italic;
 }
 
-.eachComment .time{
+.eachComment .time {
   font-size: 0.7em;
   color: #c1bcba;
   font-style: oblique;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  
 }
 
-.eachComment .voteDiv{
+.eachComment .voteDiv {
   display: flex;
   justify-content: flex-end;
 }
 
-.eachComment .deleteComment{
+.eachComment .deleteComment {
   background-color: red;
   color: aliceblue;
 }
 
-.comment-list{
+.comment-list {
   background-color: green;
 }
 
-
+.h5 {
+  font-size: 16px;
+  color: #777;
+}
