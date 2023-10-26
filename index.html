@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <script src="./src/main.js" type="module"></script>
-    <script src="./src/detail.js" type="module"></script>
     <title>Movie Collection</title>
   </head>
   <body>
@@ -32,25 +31,40 @@
       </form>
     </div>
 
-    <div class="sort">
-      <ul id="sort" style="display: flex; justify-content: center">
-        <li id="title">
-          <button id="title" style="padding: 6px; border: 1px solid black">
-            이름
-          </button>
-        </li>
-        <li id="year">
-          <button id="year" style="padding: 6px; border: 1px solid black">
-            연도
-          </button>
-        </li>
-        <li id="rating">
-          <button id="rating" style="padding: 6px; border: 1px solid black">
-            평점
-          </button>
-        </li>
-      </ul>
-    </div>
+    <form id="sort-form">
+      <div id="sort" class="sort">
+        <div class="sort-container">
+          <label for="genre">GENRE</label>
+          <select name="genre" id="genre">
+            <option value="default">default</option>
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="animation">Animation</option>
+            <option value="aomedy">Comedy</option>
+          </select>
+        </div>
+        <div class="sort-container">
+          <label for="rating">RATING</label>
+          <select name="rating" id="rating">
+            <option value="default">default</option>
+            <option value="5+">5+</option>
+            <option value="6+">6+</option>
+            <option value="7+">7+</option>
+            <option value="8+">8+</option>
+            <option value="9+">9+</option>
+          </select>
+        </div>
+        <div class="sort-container">
+          <label for="orderby">ORDER BY</label>
+          <select name="order" id="orderby">
+            <option value="default">default</option>
+            <option value="title">title</option>
+            <option value="rating">rating</option>
+          </select>
+        </div>
+        <button id="sort-btn">SORT</button>
+      </div>
+    </form>
 
     <section id="movies-container">
       <div>
