@@ -1,4 +1,4 @@
-export const options = {
+const options = {
   method: 'GET',
   headers: {
     accept: 'application/json',
@@ -10,17 +10,6 @@ export const options = {
 export const fetchMovies = async (url) => {
   try {
     const response = await fetch(url, options);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    throw error;
-  }
-};
-
-export const movieId = async (id) => {
-  try {
-    const response = await fetch(id, options);
     const data = await response.json();
     return data;
   } catch (error) {
