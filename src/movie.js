@@ -4,10 +4,15 @@ import { SORTBY, POPULAR_URL } from './constants.js';
 
 const $movieList = document.querySelector('.movie-list');
 
-export const generateMovieCards = async (apiUrl = POPULAR_URL, type) => {
+export const generateMovieCards = async (
+  apiUrl = POPULAR_URL,
+  sortObj = {},
+) => {
   const { results: movies } = await fetchMovies(apiUrl);
+  const { genre, rating, order } = sortObj;
+  // if (type) sortMovies(movies, type);
 
-  if (type) sortMovies(movies, type);
+  console.log(genre, rating && rating[0], order);
 
   $movieList.innerHTML = movies
     .map((movie) => {

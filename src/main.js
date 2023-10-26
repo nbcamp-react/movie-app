@@ -7,17 +7,29 @@ generateMovieCards();
 const $form = document.querySelector('#search');
 const $searchInput = document.getElementById('search-input');
 
+const $sortContainer = document.querySelectorAll('#sort>div>select');
+const $sortForm = document.querySelector('#sort-form');
+
 $form.addEventListener('submit', (event) => {
   event.preventDefault();
   performSearch($searchInput.value);
 });
 
-const handleClick = (event) => {
-  if (event.target.id === 'sort') return;
-
-  removeMovieCards();
-  generateMovieCards(POPULAR_URL, e.target.id);
+const sortObj = {
+  0: 'genre',
+  1: 'rating',
+  2: 'order',
 };
 
-const $sort = document.querySelector('#sort');
-$sort.addEventListener('click', handleClick);
+$sortForm.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const obj = {};
+  for (let [idx, node] of $sortContainer.entries()) {
+    if (node.value === 'default') break;
+    obj[sortObj[idx]] = node.value;
+  }
+
+  removeMovieCards();
+  generateMovieCards(POPULAR_URL, obj);
+});
