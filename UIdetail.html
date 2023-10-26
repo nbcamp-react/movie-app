@@ -1,52 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style-detail.css" />
+    <script src="/src/detail.js" type="module"></script>
+
     <title>상세페이지</title>
-    
-    <div class ="nav"><h1>Movie Collection</h1></div> 
-</head>
-<body>
-    <div class ="Movie-info-box"> 
-    <div> 
-    <div class ="movie-poster">
-        <img src="https://media.hellobot.co/fixedmenu/%E1%84%89%E1%85%B5%E1%84%85%E1%85%A9_%E1%84%8B%E1%85%A1%E1%84%86%E1%85%AE%20%E1%84%8B%E1%85%B5%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%8C%E1%85%B5%E1%86%BA%E1%84%80%E1%85%B5.png">
+
+    <div class="nav"><h1>Movie Collection</h1></div>
+  </head>
+  <body>
+    <div class="Movie-info-box"></div>
+    <div class="cmtbox"></div>
+    <div class="form-commentInfo">
+      <div class="comment-count">댓글 <span class="count">0</span></div>
+      <input class="comment-input" placeholder="댓글을 입력해 주세요." />
+      <button class="submit">등록</button>
     </div>
-    
-    <div class="Movie-info"> 
-        <div class="title">영화 제목
-            <div class="vote_average">
-               ⭐영화 평점
-            </div>
-        </div>
-    <div class="overview">영화 내용
+    <div class="comments"></div>
+    <script src="index.js"></script>
+    <div>
+      <ul class="comment-list">
+        <li>댓글입니다</li>
+      </ul>
     </div>
-</div>
-</div>
-</div>
-
-<div class="cmtbox">
-
-</div>
-<div class="form-commentInfo">
-    <div class="comment-count">댓글 <span class="count">0</span></div>
-    <input class="comment-input" placeholder="댓글을 입력해 주세요.">
-    <button class="submit">등록</button>
-</div>
-<div class=comments>
-
-</div>
-<script src="index.js"></script>
-<div >
-    <ul class="comment-list">
-        <li>
-            댓글입니다
-        </li>
-    </ul>
-
-</div>
-</body>
+  </body>
 </html>
