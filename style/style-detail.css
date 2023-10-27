@@ -74,22 +74,22 @@ body {
 
 .cmtbox {
   display: grid;
-  grid-row: 1fr;
-  /* 이걸 수정했는데 과연 남아있을까요 에커해볼게용 */
+  grid-row: 1fr 1fr;
 }
 .comment-input {
-  width: 50%;
+  width: 85%;
   height: 3.3em;
+  margin-left: 20px;
 }
 
 .submit {
   background-color: rgb(0, 128, 255);
-  width: 5.5em;
+  width: 5.9em;
   height: 3.3em;
   font-size: 15px;
   font-weight: bold;
   color: aliceblue;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .voteUp,
