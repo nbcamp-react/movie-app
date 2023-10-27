@@ -3,24 +3,22 @@ import { SORTBY } from './constants.js';
 const $sortContainer = document.querySelectorAll('#sort>div>select');
 const $movieList = document.querySelector('#movie-list');
 
-export const filterAndSortMovieCards = () => {
-  const obj = {};
-  const sortObj = {
-    0: 'genre',
-    1: 'rating',
-    2: 'order',
-  };
+const getSortOptions = () => {
+  const sortOptions = {};
+  const sortFilter = ['genre', 'rating', 'order'];
 
   for (let [idx, node] of $sortContainer.entries()) {
     if (node.value === 'default') {
-      obj[sortObj[idx]] = undefined;
+      sortOptions[`${sortFilter[idx]}`] = undefined;
       continue;
     }
-    obj[sortObj[idx]] = node.value;
+    sortOptions[sortFilter[idx]] = node.value;
   }
+  return sortOptions;
+};
 
-  const { genre, rating, order } = obj;
-
+export const filterAndSortMovieCards = () => {
+  const { genre, rating, order } = getSortOptions();
   if (!genre && !rating && !order) return;
 
   const $movieCards = document.querySelectorAll('.movie-card');
@@ -47,7 +45,7 @@ export const filterAndSortMovieCards = () => {
             .querySelector('h5')
             .innerHTML.split(' ')[2];
 
-          return cardRating1 - cardRating2;
+          return cardRating2 - cardRating1;
 
         // case SORTBY.YEAR:
         //   return;
