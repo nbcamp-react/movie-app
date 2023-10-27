@@ -60,7 +60,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   box-sizing: border-box;
 }
 
@@ -72,6 +72,11 @@ body {
   box-shadow: var(--color_card_shadow);
   cursor: pointer;
   transition: transform 0.2s;
+}
+
+.movie-card > a {
+  display: block;
+  padding: 18px;
 }
 
 .movie-card:hover {
