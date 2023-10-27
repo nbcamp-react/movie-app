@@ -16,7 +16,7 @@ body {
 }
 
 .nav {
-  height: 150px;
+  height: 170px;
   padding: 30px 0 0 30px;
   background-color: #b4a6a6;
   background-repeat: no-repeat;
@@ -43,9 +43,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px 0 30px 0;
+  margin: 40px 0 40px 0;
   background-color: #f0f0f0;
-  padding: 30px;
+  padding: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -118,46 +118,63 @@ body {
 
 .form-commentInfo {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
 }
 
-.comment-count {
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
 .login-box {
   background-color: transparent;
-  width: 160px;
+  width: fit-content;
+  height: 50px;
   padding: auto auto auto 10px;
   border: #f39c12;
 }
 .user-nick {
+  width: 100%;
   margin: 0 0 0 5px;
 }
 .user-pw {
+  width: 100%;
   margin: 5px;
 }
+
 .cmtbox {
   display: grid;
   grid-row: 1fr 1fr 1fr;
 }
 .comment-input {
   width: 70%;
-  height: 3.3em;
-  margin-left: 20px;
-  margin-right: 10px;
+  height: 50px;
+}
+
+.big-bmt-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(161, 160, 160);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 95%;
+  height: 1px;
+  border: 0;
+  background-color: #444;
 }
 
 .submit {
   background-color: rgb(0, 128, 255);
   width: 5.9em;
-  height: 3.3em;
+  height: 50px;
   font-size: 15px;
   font-weight: bold;
   color: aliceblue;
-  margin-left: 10px;
 }
 
 .voteUp,
@@ -168,7 +185,9 @@ body {
 }
 
 .comments {
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .eachComment {
@@ -210,7 +229,17 @@ body {
 }
 
 .comment-list {
-  background-color: green;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-bottom: 50px;
+}
+
+.comment-count {
+  margin: 20px 0 5px 33px;
+}
+
+.comments-box {
+  border: 1px solid black;
 }
 
 * {
