@@ -4,6 +4,12 @@ import { $searchInput } from './main.js';
 export function performSearch(inputValue) {
   const searchText = inputValue.toLowerCase();
   const $movieCards = document.querySelectorAll('.movie-card');
+  const $sortContainer = document.querySelectorAll('#sort>div>select');
+
+  $sortContainer.forEach(($select) => {
+    $select.selectedIndex = 0;
+  });
+
   let noResults = true;
 
   $movieCards.forEach((card) => {
