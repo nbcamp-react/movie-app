@@ -25,7 +25,7 @@ function commentBtnHandler(e) {
   const password = pwInput.value; //비번 type을 password로 변경하여 비번 느낌스
   //!부정연산자 비어있음 =비어있음=비어있음
   if (!commentText || !nickName || !password) {
-    alert('댓글 내용, 닉네임, 비밀번호를 모두 입력해 주세요!!.');
+    alert('댓글 내용, 닉네임, 비밀번호를 모두 입력해 주세요!!');
     return;
   }
   //userid: Unknown word 자꾸 뜨는데 포기.....가 아닌 과제 제출 전까지 찾아보겠음
