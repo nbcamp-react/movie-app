@@ -72,6 +72,11 @@ body {
   margin-bottom: 10px;
 }
 
+.cmtbox {
+  display: grid;
+  grid-row: 1fr;
+  /* 이걸 수정했는데 과연 남아있을까요 에커해볼게용 */
+}
 .comment-input {
   width: 50%;
   height: 3.3em;
@@ -84,6 +89,7 @@ body {
   font-size: 15px;
   font-weight: bold;
   color: aliceblue;
+  margin-left: 50px;
 }
 
 .voteUp,
