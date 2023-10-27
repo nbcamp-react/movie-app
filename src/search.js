@@ -11,8 +11,6 @@ export function performSearch(inputValue) {
     if (title.includes(searchText)) {
       card.style.display = 'block';
       noResults = false;
-    } else if ($searchInput.value.trim() === '') {
-      alert('앗! 제목을 입력해주세요');
     } else {
       card.style.display = 'none';
     }
@@ -21,5 +19,7 @@ export function performSearch(inputValue) {
   if (noResults) {
     alert('검색 결과가 없습니다.');
     location.reload();
+  } else if ($searchInput.value.trim() === '') {
+    alert('앗! 제목을 입력해주세요.');
   }
 }
