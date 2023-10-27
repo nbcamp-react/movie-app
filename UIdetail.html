@@ -12,26 +12,30 @@
   <body>
     <div class="nav"><h1>Movie Collection</h1></div>
     <div class="Movie-info-box"></div>
-    <div class="cmtbox"></div>
-    <div class="form-commentInfo">
-      <div class="comment-count">
-        <h4>댓글 쓰기 <span>0</span></h4>
-        <div class="ps_box">
-          <form id="commentFrm">
-            <input
-              type="text"
-              placeholder="댓글 내용을 입력해주세요."
-              class="int"
-              name="content"
-              id="content"
-            />
-            <input type="submit" class="btn" value="등록" />
-          </form>
+    <div class="big-bmt-box">
+      <div class="cmtbox">
+        <div class="comment-count">댓글 <span class="count">0</span></div>
+        <div class="form-commentInfo">
+          <input class="comment-input" placeholder="댓글을 입력해 주세요." />
+          <div class="login-box">
+            <div class="user-nick">
+              <input type="text" placeholder="닉네임" />
+            </div>
+            <div class="user-pw">
+              <input type="text" placeholder="비밀번호" />
+            </div>
+          </div>
+          <button class="submit">등록</button>
         </div>
       </div>
+
+      <div class="comments"></div>
     </div>
-    <div class="comments" id="comment-list">
-      <!-- 댓글 목록이 여기에 표시됩니다. -->
+    <script src="index.js"></script>
+    <div>
+      <ul class="comment-list">
+        <li>댓글입니다</li>
+      </ul>
     </div>
   </body>
 </html>
