@@ -126,3 +126,11 @@ body {
   background-color: #fff;
   border: 1px solid black;
 }
+
+.no-results {
+  display: none;
+}
+
+.not-found {
+  display: none;
+}

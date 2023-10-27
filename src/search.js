@@ -15,10 +15,10 @@ export function performSearch(inputValue) {
   $movieCards.forEach((card) => {
     const title = card.querySelector('h2').textContent.toLowerCase();
     if (title.includes(searchText)) {
-      card.style.display = 'block';
+      card.classList.remove('no-results', 'not-found');
       noResults = false;
     } else {
-      card.style.display = 'none';
+      card.classList.add('no-results');
     }
   });
 
