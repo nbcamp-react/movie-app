@@ -26,7 +26,7 @@ export const generateMovieCards = async (apiUrl = POPULAR_URL) => {
         <img src=${'https://image.tmdb.org/t/p/w300' + movie['poster_path']}>
         <h5>${'⭐ ' + movie['vote_average']}</h5>
         <h2>${movie['title']}</h2>
-        <h4>${findGenres}</h4>
+        <h4>${findGenres.join(', ')}</h4>
         <p>${movie['overview']}</p>
         </a>
         </li>
