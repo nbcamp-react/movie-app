@@ -7,7 +7,7 @@ export const SORTBY = {
 export const POPULAR_URL =
   'https://api.themoviedb.org/3/movie/popular?language=en-US&page=1';
 
-export const GERNE = [
+export const GENRE = [
   {
     id: 28,
     name: 'Action',
