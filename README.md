@@ -17,7 +17,7 @@
 
 ### (1) 필수 요구 사항
 
-- [x]  TMDB 또는 영화진흥위원회 오픈 API 이용
+- [x] TMDB 또는 영화진흥위원회 오픈 API 이용
 - [x] 영화정보 상세 페이지
   - [x] 기존 영화정보 카드 리스트에서 특정 item을 선택할 시, 상세 페이지로 이동
   - [x] 상세 페이지에서 메인 페이지(홈)로 이동하는 UI
@@ -59,7 +59,7 @@
 
 ### (2) 선택요구사항
 
-- [x]  CSS
+- [x] CSS
   - [x] flex, grid 사용하기
   - [x] 반응형 UI 구성하기
 - [ ] 상세페이지 리뷰 수정 및 삭제 기능 구현
@@ -87,7 +87,7 @@
       2. 변경 사항이 있는 경우
          1. `git add, commit`
          2. `git stash` (아직 완료하지 않은 일을 커밋하기 껄끄러울 때 사용)
-         3. a와 b 중 선택. 이후에  `git pull origin develop` 
+         3. a와 b 중 선택. 이후에 `git pull origin develop`
 5. 작업 브랜치를 origin에 push `git push origin feature/review`
 6. develop 브랜치에 PR
    1. PR 템플릿 사용
@@ -98,3 +98,4 @@
    2. 버그 수정이 끝나면 develop과 main 브랜치에 각각 merge
 
 > [Git - Book](https://git-scm.com/book/ko/v2)
+> .
