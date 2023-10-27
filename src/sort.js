@@ -12,6 +12,12 @@ const getSortOptions = () => {
       sortOptions[`${sortFilter[idx]}`] = undefined;
       continue;
     }
+
+    if (sortFilter[idx] === 'rating') {
+      sortOptions[sortFilter[idx]] = node.value.replace('+', '');
+      continue;
+    }
+
     sortOptions[sortFilter[idx]] = node.value;
   }
   return sortOptions;
@@ -22,16 +28,29 @@ export const filterAndSortMovieCards = () => {
   if (!genre && !rating && !order) return;
 
   const $movieCards = document.querySelectorAll('.movie-card');
-  [...$movieCards]
+  const cardArr = [...$movieCards];
+
+  if (rating) {
+    cardArr.forEach((card) => {
+      const average = +card.querySelector('h5').innerText.split(' ')[2];
+      if (average >= rating) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  cardArr
     .sort((cardLi1, cardLi2) => {
       switch (order) {
         case SORTBY.TITLE:
           const cardTitle1 = cardLi1
             .querySelector('h2')
-            .innerHTML.toUpperCase();
+            .innerText.toUpperCase();
           const cardTitle2 = cardLi2
             .querySelector('h2')
-            .innerHTML.toUpperCase();
+            .innerText.toUpperCase();
 
           if (cardTitle1 < cardTitle2) return -1;
           if (cardTitle1 > cardTitle2) return 1;
@@ -40,10 +59,10 @@ export const filterAndSortMovieCards = () => {
         case SORTBY.RATING:
           const cardRating1 = +cardLi1
             .querySelector('h5')
-            .innerHTML.split(' ')[2];
+            .innerText.split(' ')[2];
           const cardRating2 = +cardLi2
             .querySelector('h5')
-            .innerHTML.split(' ')[2];
+            .innerText.split(' ')[2];
 
           return cardRating2 - cardRating1;
 
