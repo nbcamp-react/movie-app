@@ -9,13 +9,20 @@ const movieDetail = await fetchMovies(detailUra);
 const movieInfo = document.querySelector('.Movie-info-box');
 const genreList = movieDetail['genres'].map((genre) => genre.name).join(' ');
 movieInfo.innerHTML = `
-<div class="Movie-info-box">
+<div class="movie-info-box">
+<div>
   <img src="${
     'https://image.tmdb.org/t/p/w780' + movieDetail['backdrop_path']
   }" alt="Movie Poster">
+  </div>
+  <section class="movie-detailbox">
+  <div class="movie-detail">
   <h1 class="title">${movieDetail['title']}</h1>
-  <h5>${'Genres | ' + genreList}</h5>
+  <h4>${'⭐ ' + movieDetail['vote_average'].toFixed(1)}</h5>
+  <h5 class="genre">${'Genres | ' + genreList}</h5>
   <h5>${'Release Date | ' + movieDetail['release_date']}</h5>
-  <h5>${'⭐ ' + movieDetail['vote_average'].toFixed(1)}</h5>
+  </div>
+  <div class="movie-overview">
   <p class="overview">${movieDetail['overview']}</p>
-</div>`;
+  </section>
+  </div>`;

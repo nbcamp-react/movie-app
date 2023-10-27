@@ -16,9 +16,6 @@ body {
 }
 
 .nav {
-  display: grid;
-  flex-direction: column;
-  justify-content: left;
   height: 150px;
   padding: 30px 0 0 30px;
   background-color: #b4a6a6;
@@ -33,42 +30,86 @@ body {
   background-position: center;
   border: 1px solid black;
 }
+
 .under-nav {
   width: 1200px;
   margin: 0 auto 0 auto;
+  display: grid;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Movie-info-box {
-  text-align: center;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.movie-poster {
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 1000px;
+  margin: 30px 0 30px 0;
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .Movie-info {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
 
+.movie-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-detailbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+  width: 250px;
+}
+
+.movie-overview {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 600px;
+}
+
+.genre {
+  margin-top: 20px;
+}
+
+.movie-detail > h4 {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 20px;
+  margin-top: 4px;
+}
+
+.movie-detail > h5 {
+  font-size: 14px;
+}
+
 .title {
   font-size: 28px;
-  margin: 10px 0;
+  font-weight: 600;
   color: #f39c12;
-  padding: 20px;
 }
 .overview {
-  margin-top: 20px;
   font-size: 18px;
   line-height: 1.4;
+  margin-left: 20px;
   color: #444;
 }
 .vote_average {
