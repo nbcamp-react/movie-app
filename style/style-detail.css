@@ -65,25 +65,47 @@ body {
 }
 
 .form-commentInfo {
+  display: flex;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .comment-count {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
 }
-
+.login-box {
+  background-color: transparent;
+  width: 160px;
+  padding: auto auto auto 10px;
+  border: #f39c12;
+}
+.user-nick {
+  margin: 0 0 0 5px;
+}
+.user-pw {
+  margin: 5px;
+}
+.cmtbox {
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+}
 .comment-input {
-  width: 50%;
+  width: 70%;
   height: 3.3em;
+  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .submit {
   background-color: rgb(0, 128, 255);
-  width: 5.5em;
+  width: 5.9em;
   height: 3.3em;
   font-size: 15px;
   font-weight: bold;
   color: aliceblue;
+  margin-left: 10px;
 }
 
 .voteUp,
