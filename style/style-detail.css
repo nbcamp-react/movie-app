@@ -11,20 +11,31 @@
 }
 body {
   background: #f7f4f4;
-  width: 1000px;
-  margin: 0 auto;
+  /* width: 1000px; */
+  /* margin: 0 auto; */
 }
 
 .nav {
   display: grid;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   height: 150px;
-  width: 300px;
-  background-color: #f7f4f4;
+  padding: 30px 0 0 30px;
+  background-color: #b4a6a6;
   background-repeat: no-repeat;
-  font-size: 50px;
-  margin: 0 20px 0 20px;
+  color: white;
+  margin: 0 0 0 0;
+  text-shadow: 0 0 15px black;
+  font-size: 55px;
+  background-image: url(../assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+}
+.under-nav {
+  width: 1200px;
+  margin: 0 auto 0 auto;
 }
 
 .Movie-info-box {
