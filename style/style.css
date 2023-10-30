@@ -133,9 +133,18 @@ body {
 }
 
 #sort-btn {
-  padding: 4px 16px;
+  padding: 6px 16px;
   background-color: #fff;
-  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #b4a6a6;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+#sort-btn:hover {
+  font-weight: bold;
+  transform: scale(1.02);
 }
 
 .no-results {
@@ -144,6 +153,27 @@ body {
 
 .not-found {
   display: none;
+}
+
+.sort-container > label {
+  margin-right: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.sort-select {
+  padding: 4px;
+  min-width: 120px;
+  background-color: transparent;
+  border-radius: 9px;
+  outline: none;
+  text-transform: capitalize;
+  transform: translateY(-1px);
+}
+
+.sort-select > option:first-child {
+  background-color: #eee;
+  font-weight: bold;
 }
 
 ::-webkit-scrollbar {
