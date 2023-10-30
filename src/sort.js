@@ -70,8 +70,6 @@ export const filterAndSortMovieCards = () => {
 
   if (genre) {
     cardArr.forEach((card) => {
-      if (card.classList.contains('no-results')) return;
-
       const movieGenres = card
         .querySelector('h4')
         .innerText.split(',')
@@ -84,8 +82,6 @@ export const filterAndSortMovieCards = () => {
 
   if (rating) {
     cardArr.forEach((card) => {
-      if (card.classList.contains('no-results')) return;
-
       const average = +card.querySelector('h5').innerText.split(' ')[1];
       average >= rating
         ? ratingFilter.delete(card.id)
@@ -94,7 +90,6 @@ export const filterAndSortMovieCards = () => {
   }
 
   cardArr.forEach((element) => {
-    console.log(searchFilter, genreFilter, ratingFilter);
     if (
       searchFilter.has(element.id) ||
       genreFilter.has(element.id) ||
