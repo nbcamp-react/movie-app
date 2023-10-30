@@ -359,3 +359,7 @@ li {
   color: #666;
   outline: none;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

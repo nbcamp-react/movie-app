@@ -21,14 +21,14 @@
 - [x] 영화정보 상세 페이지
   - [x] 기존 영화정보 카드 리스트에서 특정 item을 선택할 시, 상세 페이지로 이동
   - [x] 상세 페이지에서 메인 페이지(홈)로 이동하는 UI
-- [ ] 상세 페이지 영화 리뷰 작성
+- [x] 상세 페이지 영화 리뷰 작성
   - [x] 상세페이지에서 특정 영화에 대해 의견을 작성할 수 있는 UI
-  - [ ] 작성자, 리뷰, 확인비밀번호를 입력하도록 구현
-  - [ ] 작성한 정보는 브라우저의 localStorage에 적재
+  - [x] 작성자, 리뷰, 확인비밀번호를 입력하도록 구현
+  - [x] 작성한 정보는 브라우저의 localStorage에 적재
 - [x] github PR(=Pull Request) 사용한 협업
 - [ ] UX를 고려한 validation check
   - [x] 영화 검색
-  - [ ] 댓글 작성
+  - [x] 댓글 작성
   - [ ] 추가 기능 구현 시
 - [ ] 하기 기재된 Javascript 문법 요소를 이용하여 구현
   - [x] const와 let만을 이용한 변수 선언
@@ -36,12 +36,12 @@
     - [ ] number → string
     - [x] string → number
     - [ ] boolean → string
-  - [ ] 연산자 : 3개 이상 사용
+  - [x] 연산자 : 3개 이상 사용
   - [x] 화살표 함수 : 2개 이상 사용
-  - [ ] 조건문
+  - [x] 조건문
     - [x] if
     - [x] switch
-    - [ ] 삼항연산자
+    - [x] 삼항연산자
     - [x] 조건문 중첩
   - [ ] 반복문
     - [x] for문
@@ -49,10 +49,10 @@
     - [x] 반복 제어
   - [ ] 객체
     - [x] 스프레드 연산자
-    - [ ] 배열 메서드 (push, pop, shift, unshift, splice, slice) 2개 이상
-    - [ ] 배열 메서드 (**forEach**, map, **filter**, reduce, find) 3개 이상
-  - [ ] 자료구조 (Map, Set) 사용
-  - [ ] null과 undefined를 활용한 없는 값에 대한 처리
+    - [ ] 배열 메서드 (**push**, pop, shift, unshift, splice, slice) 2개 이상
+    - [x] 배열 메서드 (**forEach**, **map**, **filter**, reduce, find) 3개 이상
+  - [x] 자료구조 (Map, Set) 사용
+  - [x] null과 undefined를 활용한 없는 값에 대한 처리
   - [ ] callback 함수(setTimeout, setInterval) 활용
   - [x] DOM 제어
   - [x] module (import, export)
@@ -98,4 +98,3 @@
    2. 버그 수정이 끝나면 develop과 main 브랜치에 각각 merge
 
 > [Git - Book](https://git-scm.com/book/ko/v2)
-> .
