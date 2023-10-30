@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style-detail.css" />
+    <script type="module" src="./src/detail.js"></script>
+    <script type="module" src="./src/comment_login.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>에-잇's Movie Collection</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="./"><h1>Movie Collection</h1></a>
+    </div>
+    <div class="under-nav">
+      <div class="Movie-info-box"></div>
+      <div class="big-bmt-box">
+        <!-- <div class="cmtbox"> -->
+        <div class="comment-count">댓글 <span class="count">0</span></div>
+        <div class="form-commentInfo">
+          <input class="comment-input" placeholder="댓글을 입력해 주세요." />
+          <div class="login-box">
+            <div class="user-nick">
+              <input type="text" placeholder="닉네임" />
+            </div>
+            <div class="user-pw">
+              <input type="password" placeholder="비밀번호" />
+            </div>
+          </div>
+          <div>
+            <button class="submit">등록</button>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <div class="comments">
+          <hr />
+        </div>
+        <ul class="comment-list">
+          <li>댓글입니다</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
